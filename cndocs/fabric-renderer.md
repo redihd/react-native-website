@@ -32,7 +32,7 @@ Fabric 是 React Native 新架构的渲染系统，是从老架构的渲染系�
 - 性能提升：新的渲染系统的实现是跨平台的，每个平台都从那些原本只在某个特定平台的实现的性能优化中，得到了收益。比如拍平视图层级，原本只是 Android 上的性能优化方案，现在 Android 和 iOS 都直接有了。
 - 一致性：新的渲染系统的实现是跨平台的，不同平台之间更容易保持一致。
 - 更快的启动速度：默认情况下，宿主组件的初始化是懒执行的。
-- JS 和宿主平台之间的数据序列化更少：React 使用序列化 JSON 在 JavaScript 和宿主平台之间传递数据。新的渲染器用 JSI（JavaScript Interface）直接获取 JavaScript 数据。
+- JS 和宿主平台之间的数据序列化更少：React曾经使用序列化 JSON 在 JavaScript 和宿主平台之间传递数据。新的渲染器通过 JSI（JavaScript Interface）直接访问JavaScript值来改善曾经的数据传输。
 
 
 > 名词解释
